@@ -1,0 +1,17 @@
+type Query {
+  getMovies: [Movie!]
+}
+
+type Movie {
+  _id: ID!
+  title: String!
+  image: String
+  description: String
+  likes: Int
+}
+
+type Mutation {
+  createMovie (title: String!, image: String, description: String!, likes: Int): Movie
+  deleteMovie (id: ID!): [Movie]
+}
+

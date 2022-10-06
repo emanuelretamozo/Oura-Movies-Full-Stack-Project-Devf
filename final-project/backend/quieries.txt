@@ -1,0 +1,30 @@
+<--- Mutation --->
+
+mutation createMovie($title: String!, $image:  String, $description:  String!) {
+  createMovie(title: $title, image: $image, description: $description) {
+    _id
+    title
+    description
+  }
+}
+
+variables 
+     {
+        "title": "The Godfather 3",
+        "image": "https://i.ytimg.com/vi/U8GdYixWfOc/movieposter_en.jpg",
+        "description": "Action and much drama"
+    }
+
+mutation deleteMovie($id: ID!){
+  deleteMovie(id : $id){
+    title
+    description
+  }
+}
+
+{
+  "id": "633cff8c1b6dae566a74a8ca"
+}
+
+<-- Mutation  -->
+
