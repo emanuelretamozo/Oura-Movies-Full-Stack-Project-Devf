@@ -13,5 +13,6 @@ type Movie {
 type Mutation {
   createMovie (title: String!, image: String, description: String!, likes: Int): Movie
   deleteMovie (id: ID!): [Movie]
+  updateLikes (likes: Int): [Movie]
 }
 

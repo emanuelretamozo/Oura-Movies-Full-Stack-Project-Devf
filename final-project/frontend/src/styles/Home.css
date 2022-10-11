@@ -1,0 +1,5 @@
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-auto-rows: 500px;
+}

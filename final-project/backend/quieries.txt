@@ -15,7 +15,8 @@ variables
         "description": "Action and much drama"
     }
 
-mutation deleteMovie($id: ID!){
+
+mutation deleteMovie($id: ID!) {
   deleteMovie(id : $id){
     title
     description
@@ -24,6 +25,18 @@ mutation deleteMovie($id: ID!){
 
 {
   "id": "633cff8c1b6dae566a74a8ca"
+}
+
+
+mutation updateLikes($likes: Int!) {
+    updateLikes(likes : $likes) {
+        likes
+        title
+    }
+}
+
+{
+    "likes": 2
 }
 
 <-- Mutation  -->

@@ -15,7 +15,7 @@ const movieSchema = new Schema({
 		required: true,
 	},
     likes: {
-        type: [Schema.Types.Int],
+        type: Schema.Types.Number,
         required: false,
     }
 });
